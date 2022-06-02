@@ -1,0 +1,183 @@
+.container {
+
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+
+.left { 
+
+    width: 15%;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+
+.left a {
+
+}
+
+.right { 
+
+    width: 85%;
+    height: 100vh;
+  
+
+    float: right;
+
+}
+
+.tag { 
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.header { 
+
+    padding: 10px;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+
+#myBooks {
+
+    float: right;
+    margin: 10px;
+    color: white;
+    background-color:#3ddbc0;
+    border-color: white;
+
+  
+
+    &:hover { 
+
+    color: #3ddbc0;
+    background-color: white;
+    border-color: #3ddbc0;
+
+
+
+
+
+    
+    }
+    
+
+
+    
+}
+
+
+
+#searchButton { 
+    margin-top: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  
+
+    &:hover { 
+        background-color: black;
+        color: white;
+    
+    }
+
+    
+}
+
+#searchBox { 
+ 
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 35px;
+    width: 40vh;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #ccc;
+
+    &:focus{
+        outline: none;
+    }
+
+}
+
+#searchImage {
+    width: 20px;
+    height: 20px;
+}
+
+.bookSection {
+    height: 100vh;
+    margin: 20px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.card { 
+
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+ 
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+    box-shadow: 2px 2px 10px #ccc;
+    overflow: hidden;
+    white-space: nowrap;
+
+
+ 
+
+
+  
+
+}
+a { 
+    text-decoration: none;
+    color: black;
+}
+
+.bookImg { 
+    
+    width: 200px;
+    height: 250px;
+  
+
+
+}
+
+.title {
+     margin: 0 auto;
+     font-size: 25px;
+  
+}
+
+.author{
+    margin: 0 auto;
+    color: rgb(129, 129, 129);
+}

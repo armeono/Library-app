@@ -1,0 +1,60 @@
+<div class="container">
+
+    <div class="left">
+       <a href="/" class="header">libApp</a>
+
+
+
+
+    <a class="tag" href="">All books</a>
+    <a class="tag" href="">Settings</a>
+    <a class="tag" href="">Contact</a>
+    <a class="tag" href="">Log out</a>
+ 
+
+    </div>
+
+
+
+
+    <div class="right">
+
+        <div class="detailsGeneral">
+            <h1 id = 'bookTitle'>{{booksInfo.title}}</h1>
+
+            <div id="detailsBox">
+
+                <img id="bookImage" [src]="booksInfo.thumbnail" alt="Book Image">
+
+                <div id="details">
+
+                    <h3 id = "bookAuthor">{{booksInfo.author}}</h3>
+                    <h4 id="categoryInfo">{{booksInfo.categories}}</h4>
+                    <p id="description">{{booksInfo.description}}</p>
+
+                    <button mat-button id="addButton">Add to basket</button>
+    
+    
+
+
+                </div>
+
+                
+
+               
+            </div>
+            <hr>
+
+        </div>
+
+        
+
+
+
+
+
+
+    </div>
+
+
+</div> 

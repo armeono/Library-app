@@ -1,0 +1,49 @@
+<div class="container">
+
+    <div class="left">
+       <a routerLink="/" class="header">libApp</a>
+
+
+
+
+    <a class="tag" href="">All books</a>
+    <a class="tag" href="">Settings</a>
+    <a class="tag" href="">Contact</a>
+    <a class="tag" href="">Log out</a>
+ 
+
+    </div>
+
+
+
+
+    <div class="right">
+
+
+      
+
+        <input id="searchBox" type="search" placeholder="Search books...">
+        
+  
+        <a mat-stroked-button id="myBooks" href="">My books</a>
+
+        <div class="bookSection"  >
+
+            <a  routerLink="/bookdetails" class="card" *ngFor="let book of books" (click)="getInfo(book)">
+                <img class="bookImg" src={{book.thumbnail}} alt="">
+                <h2 class="title">{{book.title}}</h2>
+                <p class="author">{{book.author}}</p>
+            </a>
+          
+            
+           
+            
+        </div>
+   
+
+
+
+    </div>
+
+
+</div> 
