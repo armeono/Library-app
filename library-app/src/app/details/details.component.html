@@ -1,7 +1,7 @@
 <div class="container">
 
     <div class="left">
-       <a href="/" class="header">libApp</a>
+       <a routerLink="/" class="header">libApp</a>
 
 
 
@@ -32,10 +32,9 @@
                     <h4 id="categoryInfo">{{booksInfo.categories}}</h4>
                     <p id="description">{{booksInfo.description}}</p>
 
-                    <button mat-button id="addButton">Add to basket</button>
+                    <button mat-button id="addButton" (click)="addBook(booksInfo)">Add to basket</button>
     
     
-
 
                 </div>
 
@@ -43,13 +42,30 @@
 
                
             </div>
+
+            
             <hr>
+
+            <h1 class="bookTitle">People who read this also read:</h1>
+
+            <div class="bookSection"  >
+
+                <a  routerLink="/bookdetails" class="card" *ngFor="let book of books" (click)="getInfo(book)">
+                    <img class="bookImg2" src={{book.thumbnail}} alt="">
+                    <h2 class="title2">{{book.title}}</h2>
+                    <p class="author2">{{book.author}}</p>
+                </a>
+              
+                
+               
+                
+            </div>
+
+
 
         </div>
 
         
-
-
 
 
 

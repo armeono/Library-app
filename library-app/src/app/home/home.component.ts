@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { BookapiService } from '../bookapi.service';
 import { IBooks } from '../books';
+import { IUser } from '../user';
+import { UsersService } from '../users.service';
 
 @Component({
   selector: 'app-home',
@@ -9,12 +12,23 @@ import { IBooks } from '../books';
 })
 export class HomeComponent implements OnInit {
 
+  currentUser: any = "User"
+
+
+
   public books: any= []
 
+  
 
-  constructor(private bookService: BookapiService) { }
+
+
+  constructor(private bookService: BookapiService, 
+    private userService: UsersService,
+    private router: Router) { }
 
   ngOnInit(): void {
+
+    
 
       this.bookService.getBooks().subscribe(books => {
       
@@ -22,6 +36,12 @@ export class HomeComponent implements OnInit {
 
 
     })
+
+    this.userService.currentUser.subscribe(name => {
+      this.currentUser = name.username
+    })
+
+
 
   }
 
@@ -33,6 +53,11 @@ export class HomeComponent implements OnInit {
   
 
   }
+
+  goToMyBooks(){
+    this.router.navigate(['/myBooks'])
+  }
+
 
 
 }

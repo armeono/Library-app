@@ -1,25 +1,10 @@
 <div class="container">
 
-    <div class="signUp">
 
-        <span class="dot"></span>
-        <span class="dot2"></span>
 
-        <h1>New here?</h1>
-        <p>Sign up and discover new books!</p>
-        <button mat-raised-button (click)="goToSignUp()">Sign up!</button>
+    <div class="signup">
 
-   
-           
-  
-
-       
-
-    </div>
-
-    <div class="login">
-
-        <h1 class="header">Log In</h1>
+        <h1 class="header">Sign up</h1>
 
         <div class="username">
             <h4 id="username">Username</h4>
@@ -35,7 +20,7 @@
             <p id="errorMessage">{{error}}</p>
         </div>
 
-        <button mat-button class="submit" (click)="getUserData(username.value, password.value)">Log In</button>
+        <button mat-button class="submit" (click)="createUser(username.value, password.value)">Sign In</button>
 
 
     </div>

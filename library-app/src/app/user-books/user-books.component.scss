@@ -63,41 +63,6 @@
 }
 
 
-#myBooks {
-
-    height:37px;
-
-
-    margin: 10px;
-    margin-top: 20px;
-
-    color: white;
-    background-color:#3ddbc0;
-    border-color: white;
-  
-
-
-
-
-  
-
-    &:hover { 
-
-    color: #3ddbc0;
-    background-color: white;
-    border-color: #3ddbc0;
-
-
-
-
-
-    
-    }
-    
-
-
-    
-}
 
 .helloMessage{
     margin-left: 20px;
@@ -105,48 +70,6 @@
   
 }
 
-
-
-#searchButton { 
-    margin-top: 10px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    position: absolute;
-    
-  
-
-    &:hover { 
-        background-color: black;
-        color: white;
-    
-    }
-
-    
-}
-
-#searchBox { 
- 
-    margin-left: 45%;
-    margin-top: 20px;
-    height: 35px;
-    width: 40vh;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 1px solid #ccc;
-    
-  
-
-    &:focus{
-        outline: none;
-    }
-
-}
-
-#searchImage {
-    width: 20px;
-    height: 20px;
-}
 
 .elementContainer{ 
     display: flex;

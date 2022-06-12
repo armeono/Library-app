@@ -34,6 +34,8 @@
     float: right;
 
 
+
+
 }
 
 .tag { 
@@ -86,68 +88,9 @@
 }
 
 
-
-#searchButton { 
-    margin-top: 10px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  
-
-    &:hover { 
-        background-color: black;
-        color: white;
-    
-    }
-
-    
-}
-
-#searchBox { 
- 
-    margin-left: 20px;
-    margin-top: 10px;
-    height: 35px;
-    width: 40vh;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 1px solid #ccc;
-
-    &:focus{
-        outline: none;
-    }
-
-}
-
-#searchImage {
-    width: 20px;
-    height: 20px;
-}
-
-.bookSection {
-    height: 100vh;
-    margin: 20px;
-   
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-}
-
-
 a { 
     text-decoration: none;
     color: black;
-}
-
-.title {
-     margin: 0 auto;
-     font-size: 25px;
-  
-}
-
-.author{
-    margin: 0 auto;
-    color: rgb(129, 129, 129);
 }
 
 .detailsGeneral {
@@ -155,6 +98,7 @@ a {
     height: 800px;
 
     padding: 20px;
+    overflow: hidden;
 
 
     
@@ -166,9 +110,10 @@ a {
 }
 
 #detailsBox {
-    height: 400px;
+    height: 300px;
 
     display: flex;
+    overflow: hidden;
   
 }
 
@@ -184,6 +129,7 @@ a {
     width: 700px;
     overflow: hidden;
     color: rgb(74, 74, 74);
+    overflow: hidden;
 }
 
 #bookImage {
@@ -195,8 +141,6 @@ a {
 
     float: right;
     margin-right: 50px;
-
-    
 
     
     border-radius: 60px;
@@ -215,4 +159,67 @@ a {
 hr {
     margin-top: 30px;
     margin-right: 20px;
+}
+
+.bookSection {
+    height: 100vh;
+    margin: 20px;
+   
+    display: flex;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+
+   
+}
+
+.card { 
+
+    margin: 10px;
+
+    width: 200px;
+    height: 300px;
+ 
+    
+    
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+    box-shadow: 2px 2px 10px #ccc;
+
+    white-space: nowrap;
+
+
+
+}
+
+.bookImg2 { 
+    
+    width: 200px;
+    height: 250px;
+  
+
+
+}
+
+.title2 {
+     margin: 0 auto;
+     font-size: 25px;
+
+     overflow-x: hidden;
+
+     text-align: center;
+  
+}
+
+.author2{
+    margin: 0 auto;
+    color: rgb(129, 129, 129);
+
+    overflow-x: hidden;
+
+    text-align: center;
 }

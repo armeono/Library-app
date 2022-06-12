@@ -28,9 +28,6 @@ export class BookapiService {
    changeInfo(book: IBooks){
 
     this.booksInfo.next(book);
-
-
-
     
 
   }
