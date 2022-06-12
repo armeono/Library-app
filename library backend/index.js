@@ -4,13 +4,12 @@ const mysql = require('mysql2')
 const cors = require('cors')
 const bcrypt = require('bcrypt')
 const bodyParser = require('body-parser')
+require('dotenv').config()
 
 
 let currentUser = "";
 
-API_KEY = "AIzaSyDiWI447DKTfOXdnxgF0Ak6Kcng6Ebcua4"
-
-url = `https://www.googleapis.com/books/v1/volumes?q=subject:fiction&maxResults=25&filter=free-ebooks&key=${API_KEY}`
+url = `https://www.googleapis.com/books/v1/volumes?q=subject:fiction&maxResults=25&filter=free-ebooks&key=${process.env.API_KEY}`
 
 
 const PORT = process.env.PORT || 8080
